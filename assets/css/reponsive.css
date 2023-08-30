@@ -1,0 +1,144 @@
+@media screen and (max-width:991px){
+    h3{
+        font-size: 1.2rem;
+    }
+    .nav-toggle{
+        display: block;
+        margin-right:20px;
+    }
+    .main-nav{
+        overflow: initial;
+    }
+    .nav-links{
+        position: absolute;
+        background-color: #fff;
+        top:100%;
+        left:-100%;
+        width:100vw;
+        transition: .2s ease-in-out;
+    }
+    .active{
+        left:0;
+    }
+    .nav-links ul{
+        flex-direction: column;
+    }
+    .nav-links ul li{
+        padding-block:var(--padding-inline-section);
+    }
+    .hero{
+        margin-top:auto;
+    }
+    .examples-tiles{
+        gap:20px;
+    }
+    .examples-tile{
+        width:calc(50% - 10px);
+        height: 180px;
+    }
+}
+@media screen and (max-width:767px) {
+    /* utility classes */
+    .small-bold-text{
+        font-size:.8rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    .bold-p{
+        font-size:.8rem;
+        word-spacing:1px;
+    }
+
+
+    /* hero */
+    .hero{
+        flex-direction: column-reverse;
+    }
+    .hero-left{
+        text-align: center;
+        max-width:100vw;
+        margin-bottom:50px;
+    }
+
+    /* feature sections */
+    .card{
+        min-width:calc(50% - 10px);
+    }
+    .big-feature-container{
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .big-feature-img{
+        width:100%;
+    }
+    .big-feature-des{
+        width:100%;
+    }
+    .big-feature-des img{
+        margin-block: 10px;
+    }
+    #big-feature-2nd{
+        flex-direction: column-reverse;
+    }
+
+    /* cta-feature */
+    .cta-container{
+        flex-direction: column;
+    }
+    .cta-info{
+        width: 100%;
+    }
+    .cta-img{
+        width: 100%;
+    }
+    /* cta */
+    .cta-trial{
+        gap:10px;
+        margin-block:50px;
+    }
+
+    /* footer */
+    .footer-container{
+        flex-direction: column;
+        align-items:center;
+        gap:30px;
+        padding-block:40px;
+    }
+    .link-column{
+        align-items:center;
+    }
+}
+
+@media screen and (max-width:479px) {
+    /* resets */
+    :root{
+        --padding-inline-section:10px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+
+    /* feature sections */
+    .features-header{
+        margin-block:40px;
+    }
+    .features-header h2{
+        margin:20px;
+    }
+    .card{
+        min-width:100%;
+    }
+    
+    /* examples */
+    .examples-tile{
+        width:100%;
+    }
+    .cta-btn{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
